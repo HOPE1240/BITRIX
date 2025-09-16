@@ -72,9 +72,10 @@ function render(list) {
         return;
     }
 
-    list.forEach(pr => {
+    list.forEach((pr, i) => {
         const div = document.createElement('div');
         div.className = 'property';
+        div.style.animationDelay = (i * 0.08) + 's';
         div.innerHTML = `
             <strong>${pr.name || pr.title || pr.PropertyType || 'Propiedad'}</strong><br>
             Código de inmueble: ${pr.propertyCode || ''}<br>
