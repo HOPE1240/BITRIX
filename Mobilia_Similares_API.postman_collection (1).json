@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "2978ed83-59c3-4f21-b7a1-c6ed27aa40b9",
+    "name": "Mobilia - Inmuebles Similares API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Colección para probar el endpoint getMatchingProperties con branchCode incluido."
+  },
+  "item": [
+    {
+      "name": "GET getMatchingProperties",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://54.145.54.14:8080/mobilia-tes/ws/Extra?operation=getMatchingProperties&propertyTypeCode=APARTAMENTO&sectorCode=LASLOMAS&fromRooms=1&toRooms=4&fromArea=0&toArea=125&fromPrice=1500000&toPrice=2100000&forRent=T&onSale=F&branchCode=OCCIDENTE",
+          "protocol": "http",
+          "host": [
+            "54.145.54.14"
+          ],
+          "port": "8080",
+          "path": [
+            "mobilia-tes",
+            "ws",
+            "Extra"
+          ],
+          "query": [
+            {
+              "key": "operation",
+              "value": "getMatchingProperties"
+            },
+            {
+              "key": "propertyTypeCode",
+              "value": "APARTAMENTO"
+            },
+            {
+              "key": "sectorCode",
+              "value": "LASLOMAS"
+            },
+            {
+              "key": "fromRooms",
+              "value": "1"
+            },
+            {
+              "key": "toRooms",
+              "value": "4"
+            },
+            {
+              "key": "fromArea",
+              "value": "0"
+            },
+            {
+              "key": "toArea",
+              "value": "125"
+            },
+            {
+              "key": "fromPrice",
+              "value": "1500000"
+            },
+            {
+              "key": "toPrice",
+              "value": "2100000"
+            },
+            {
+              "key": "forRent",
+              "value": "T"
+            },
+            {
+              "key": "onSale",
+              "value": "F"
+            },
+            {
+              "key": "branchCode",
+              "value": "OCCIDENTE"
+            }
+          ]
+        },
+        "description": "Prueba de inmuebles similares con todos los parámetros incluyendo branchCode."
+      },
+      "response": []
+    }
+  ]
+}

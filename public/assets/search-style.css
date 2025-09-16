@@ -1,0 +1,42 @@
+/* Estilos para el formulario de búsqueda y la tabla de resultados */
+.search-container {
+    background: #f4f4f4;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    max-width: 900px;
+}
+.search-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.search-table td {
+    padding: 8px 6px;
+}
+.search-table input, .search-table select {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.results-table th, .results-table td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.results-table th {
+    background: #eaeaea;
+    font-weight: bold;
+}
+.results-table tr:last-child td {
+    border-bottom: none;
+}
